@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #014E56;
+    padding: 60px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container li {
+    list-style: none;
+}
+
+header .container ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+header .container a {
+    font-family: "Livvic", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    color: white;
+    text-decoration: none;
+}
+
+.btn {
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 10px 30px;
+    background-color: inherit;
+    color: white;
+}
+
+.btn:hover {
+    border: 1px solid #002529;
+    background-color: #ffffff;
+    color: #014E56;
+}
+.s1{
+    background-color: #014E56;
+}
+.s1 .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 120px;
+    padding: 100px 0;
+    color: white;
+}
+
+.s1 h1, .s2 h1, .s3 h1{
+    font-family: "Livvic", sans-serif;
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 100px;
+    text-align: left;
+}
+
+.s1 p {
+    font-family: "Livvic", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+.s2{
+    background-color: #004047;
+    padding: 80px 0;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: #012F34;
+    width: 350px;
+    height: 274px;
+    padding: 44px 0;
+}
+.plus{
+    padding-top: 60px;
+}
+footer .container{
+    display: flex;
+    align-items: center;
+}
+.imgs{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    gap: 30px;
+}
+header .m-b{
+    display: none;
+    background-color: inherit;
+    color: white;
+    border: none;
+}
+@media(max-width:768px){
+    .s1 .container{
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        h1{
+            font-size: 64px;
+            margin: 0 auto;
+        }
+        p{
+            font-size: 18px;
+        }
+    }
+    .cards{
+        flex-direction: column;
+        gap: 60px;
+    }
+    .imgs{
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+@media(max-width:375px){
+    .s1 .container{
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        h1{
+            margin: 0 auto;
+            font-size: 40px;
+        }
+        p{
+            font-size: 15px;
+        }
+    }
+    header .container nav{
+        display: none;
+    }
+    header .m-b{
+        display: block;
+    }
+    footer .container{
+        flex-direction: column;
+        gap: 40px;
+        padding: 30px 40px;
+    }
+}
